@@ -1,0 +1,127 @@
+
+#brand {
+    font-family: "Lexend zetta";
+    
+  }
+  
+  header {
+    border-bottom: 2px solid #000000; 
+    min-height: 70px;
+    ;
+  }
+  
+  header img {
+   max-height: 70px;
+   justify-content: flex-start;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Lexend zetta";
+  }
+  
+
+  /*  vav styles */
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* nav menu */
+.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* burg nav styles  */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1001;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #000000;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+      display: flex;
+  }
+
+  .nav-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 200px;
+      height: 100vh;
+    
+     background-color: rgba(255, 255, 255, 0.934);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      transition: right 0.3s ease;
+      z-index: 1000;
+  }
+
+  .nav-menu a {
+      color: white
+  }
+
+  .nav-menu.running {
+      left: 0;
+  }
+
+  .nav-toggle.running span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+  }
+  .nav-toggle.running span:nth-child(2) {
+      opacity: 0;
+  }
+  .nav-toggle.running span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+   /* showcase section mobile */
+
+  .showcase {
+      flex: 0 0 calc(50% - 10px);
+  }
+}
+

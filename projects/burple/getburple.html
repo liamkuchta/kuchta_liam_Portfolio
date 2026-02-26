@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quantity Selector</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+
+
+    <div id="sticky-nav-con">
+        <header id="main-header">
+
+            <nav id="main-nav">
+                <h2 class="hidden">Main Nav</h2>
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="flavors.html">FLAVOURS</a></li>
+                        <li><a href="about.html">ABOUT </a></li>
+                        <li><a href="contact.html">CONTACT US </a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="logo">
+                <a href="home.html">
+                    <img src="images/burp1.svg" alt="burple Logo">
+                </a>
+            </div>
+
+            <div id="get-burple" class="get-burple">
+                <a href="getburple.html">
+                    <button>GET BURPLE</button>
+                </a>
+            </div>
+
+        </header>
+    </div>
+
+
+
+    <form>
+        <label for="quantity">Number of Items:</label>
+        <div class="quantity-container">
+            <button type="button" class="arrow" id="decrease">←</button>
+            <input type="text" id="quantity" class="number" value="1" readonly>
+            <button type="button" class="arrow" id="increase">→</button>
+        </div>
+    </form>
+
+    <footer id="thefooter">
+
+        <section class="grid-con" id="footer-flex">
+            <h2 class="hidden">footer</h2>
+
+            <div id="commission" class=" l-col-start-1 l-col-end-6">
+                <p>
+                    BURPLE
+                </p>
+            </div>
+
+            <div class="l-col-start-7 l-col-end-13 m-col-start-4" id="footer-nav">
+                <nav>
+
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About </a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Flavours</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+
+        </section>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

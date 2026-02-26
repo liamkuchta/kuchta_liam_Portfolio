@@ -1,0 +1,738 @@
+
+.hidden {
+   display: none;
+}
+
+body {
+   background-color: rgb(172, 233, 255);
+}
+
+img {
+   width: 100%;
+   display: block;
+}
+
+ #mobile-outline {
+    outline: 20px solid #008cff;
+    max-width: 412px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+ }
+ 
+ a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+ }
+ 
+ input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+ }
+ 
+
+ 
+ /* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV */
+ 
+#main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* for centering logo */
+  padding: 0 20px;
+}
+
+#logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  max-width: 280px;
+}
+
+#logo img {
+  display: block;
+  width: 100%; /* scales logo properly */
+}
+
+#main-nav {
+  flex: 1; /* stick to left */
+}
+ 
+#sticky-nav-con {
+   width: 100vw; 
+   margin-left: calc(-50vw + 50%);
+}
+
+#burger-con {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: none;
+}
+
+#burger-con ul li a  {
+    font-size: 27px;
+    color: #00c3ff;
+    margin-right: 0px;
+ }
+   
+#burger-con.slide-toggle {
+    display: block;
+ }
+
+#main-nav button {
+   width: 20px;
+   height: 20px;
+   background: url(../images/menu.svg) no-repeat center;
+   margin-top: 15px;
+   transition: all .5s ease;
+   margin-bottom: 20px;
+   border: 0;
+   cursor: pointer;
+}
+
+#main-nav button.expanded {
+   transform: rotate(90deg);
+}
+ 
+ #main-nav ul li a:hover {
+    color: #00aeff;
+ }
+ 
+ #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+#main-nav ul li a {
+   display: block;
+   padding: 10px 0 10px 0;
+   text-align: center;
+   color: #00c3ff;
+   font-family: "Lilita One", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+ }
+ 
+ #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+ }
+ 
+ #main-nav ul li:last-child {
+    margin-bottom: 10px;
+ }
+ 
+ 
+ 
+ #get-burple {
+    display: none;
+ }
+ 
+ #hero-main {
+   height: 220px;
+   object-fit: cover;
+}
+ 
+ #hero img {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    justify-self: center;
+ }
+ 
+
+ 
+ #hero .grid-con {
+    grid-column: 2/3;
+    grid-row:1/1;
+    margin: 0;
+ }
+
+ .get-burple {
+   background-color: #678dad;
+   color: #fff;
+   font-size: 90px;
+   font-family: 'lilita one';
+   display: flex;
+   align-items: center;
+   transition: all 0.3s ease-in-out;
+}
+ 
+ .get-burple {
+    background-color: #00c3ff;
+    color: #ffffff;
+    margin-top: 29px;
+    width: 180px;
+    height: 90px;
+    font-size: 27px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+ }
+ 
+ .get-burple:hover {
+    box-shadow: inset 0px -120px 0px #00afe5;
+ }
+
+ /* Tablet Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet  Tablet   */
+ 
+ @media screen and (min-width: 768px) {
+ 
+    /* Main Nav */
+ 
+    #sticky-nav-con {
+       position: sticky;
+       top: 0px;
+       background-color: #ffffff;
+       border-bottom: solid 1px #0083ab;
+       z-index: 1;
+    }
+ 
+    #main-nav {
+       margin-top: 4%;
+       margin-bottom: 4%;
+    }
+ 
+    #main-nav ul li a {
+       display: inline;
+    }
+ 
+    #button {
+       display: none;
+    }
+ 
+    #burger-con {
+       display: block;
+       font-size: 12px;
+    }
+ 
+    #burger-con ul li, #burger-con ul li:first-child {
+       border: none;
+       display: inline;
+    }
+ 
+    #burger-con ul li {
+       margin-right: 10px;
+    }
+ 
+    #burger-con ul li:last-child {
+       margin-right: 0px;
+    }
+ 
+    #logo {
+       margin-top: 32px;
+       order: -1; 
+       margin-left: 75px;
+    }
+ 
+    #get-burple {
+       display: flex;
+       margin-right: -16px;
+    }
+   }
+
+/* HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME */
+
+#iconic  {
+display: flex;
+justify-content: center;
+}
+
+#pic1 {
+   width: 100vw; 
+   position: relative;
+ background: url(../images/Comp\ 1\ \(0-00-hgjh03-01\)_1.png) no-repeat;
+ background-size: contain;
+ aspect-ratio: 2.125; 
+}
+
+
+
+#pic1 button {
+   
+   height: 54px;
+   background-color: white;
+   color: #00c3ff;
+   font-family: 'lilita one';
+   border-radius: 30px;
+
+   position: absolute;
+   bottom: 20px;      /* distance from bottom */
+   left: 50%;
+   transform: translateX(-50%); /* perfectly centers horizontally */
+   padding: 10px 20px;
+   font-size: 30px;
+}
+
+#newflavours {
+   background-color:  rgb(172, 233, 255);
+   margin-bottom: 80px;
+}
+
+#new-flav-title h1 {
+   display: flex;
+   justify-content: center;
+   font-family: 'Lilita One';
+   color: #00c3ff;
+   font-size: 120px;
+   -webkit-text-stroke: .1px #00abdf;
+}
+
+#featured-flav  {
+   display: flex ;
+   justify-content: center;
+   height: 700px;
+}
+
+#featured-flav div h3 {
+   color: #a4eaff;
+}
+
+#featured-flav div {
+   max-width: 460px;
+   margin: 20px;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+#newflav1 {
+   max-width: 466px;
+   max-height: 667px;
+   background:  url(../images/lime-home.png) no-repeat;
+   background-size: cover; 
+   position: relative;
+}
+
+#newflav1 h3 {
+ padding: 200px;
+}
+
+#newflav1 img {
+   width: 75px;
+   position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#newflav2 {
+   max-width: 466px;
+   max-height: 667px;
+   background:  url(../images/grape-home.png) no-repeat;
+   background-size: cover; 
+   position: relative;
+}
+
+#newflav2 h3 {
+   padding: 200px;
+  }
+
+  #newflav2 img {
+   width: 75px;
+   position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#newflav3 {
+   max-width: 466px;
+   max-height: 667px;
+   background:  url(../images/orange-home.png) no-repeat;
+   background-size: cover; 
+   position: relative;
+}
+
+#newflav3 h3 {
+   padding: 200px;
+  }
+
+  #newflav3 img {
+   width: 75px;
+   position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#summer {
+   background: url(../images/yes.png) no-repeat;
+   background-size: cover;
+   height: 1000px;
+}
+
+#summer h3 {
+   font-family: 'Lilita One';
+   color: white;
+   font-size: 140px;
+}
+ 
+#more-btn-home {
+   display: flex;
+   justify-content: center;
+}
+
+#more-btn-home button {
+   padding: 30px;
+   padding-left: 60px;
+   padding-right: 60px;
+   color: #00c3ff;
+   font-family: 'Lilita One';
+   font-size: 30px;
+   background-color: white;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT */
+
+.about-main {
+   background: url(../images/ice1920.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+
+   padding-top: 400px; /* pushes the content down, but background stays in place */
+   padding-bottom: 400px; 
+ }
+
+
+#about p {
+   justify-content: center;
+   display: flex;
+   color: white;
+   font-family: 'lilita one';
+}
+
+#about div {
+   background-color: #00c3ff;
+   padding-left: 30px;
+   padding-top: 9px;
+   padding-right: 30px;
+   padding-bottom: 30px;
+   border-radius: 10px;
+ 
+}
+
+#about div h2 {
+   color: white;
+   font-size: 40px;
+   justify-content: center;
+   display: flex;
+   font-family: 'lilita one';
+}
+
+#about div p {
+   font-size: 30px;
+   justify-content: center;
+   display: flex;
+}
+
+#about-nav nav a {
+   display: flex;
+   justify-content: center;
+}
+
+
+#home-link a {
+   text-decoration: none;
+   color:rgb(0, 160, 252);
+   font-size: 50px;
+}
+
+/* CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
+
+.contact-main {
+   background: url(../images/ice1920.png) no-repeat;
+   background-size: cover;
+ }
+ 
+
+#home-link a {
+   text-decoration: none;
+   color:rgb(0, 160, 252);
+   font-size: 50px;
+}
+
+#home-link a:hover {
+   text-decoration: none;
+   color:rgb(0, 117, 167);
+   font-size: 50px;
+}
+
+form {
+   text-align: left;
+}
+
+button {
+   background-color: #00c3ff;
+   color: white;
+   border: none;
+   cursor: pointer;
+   margin-top: 1rem;
+   border-radius: 5px;
+}
+
+button:hover {
+   background-color: #154625;
+}
+
+.socials a {
+   text-decoration: none;
+   color:rgb(0, 160, 252);
+   font-size: 30px;
+}
+   
+.socials a:hover {
+   text-decoration: none;
+   color:rgb(1, 15, 3);
+}
+
+label {
+   display: block;
+   margin-top: 0.5rem;
+   color: #00b3ea;
+}  
+
+label h3 {
+   color: black;
+}
+
+input {
+   border-radius: 5px;
+}
+
+textarea {
+   border-radius: 5px;
+}
+
+form {
+   margin: 0 auto;
+}
+
+input::placeholder {
+   font-size: 24px;   
+   color: gray;       
+   text-align: center;
+   font-family: 'Lilita One';
+   color: #00c3ff;
+ }
+
+#contact-title  {
+   display: flex;
+   justify-content: center;
+   font-size: 60PX;
+   color: #ffffff;
+   -webkit-text-stroke: .1px #52d7ff;
+   font-family: 'Lilita One';
+}
+
+#send-btn {
+   padding: 30px;
+   padding-left: 60px;
+   padding-right: 60px;
+   color: #00c3ff;
+   font-family: 'Lilita One';
+   font-size: 37px;
+   background-color: white;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+#message_input {
+   width: 500px;
+   height: 400px;
+   border-radius: 50px;
+   background-color: #98ecff;
+}
+
+#name_input {
+   width: 500px;
+   height: 70px;
+   border-radius: 50px;
+   background-color: #98ecff;
+}
+
+#email_input {
+   width: 500px;
+   height: 70px;
+   border-radius: 50px;
+   background-color: #98ecff;
+}
+
+#contactform {
+   display: flex;
+  justify-content: center; 
+  align-items: center;  
+}
+
+form {
+   margin: 0 auto;
+   text-align: center;
+}
+
+/* FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS FLAVORS */
+
+#flav-first-row {
+   display: flex ;
+   justify-content: center;
+   height: 700px;
+}
+
+#flav-first-row button {
+  height: 50px;
+  border-radius: 10px;
+  color: rgb(100, 214, 255);
+  font-size: 25px;
+  font-family: 'lilita one';
+  background-color: white;
+  
+}
+
+
+#flav-first-row img {
+   max-width: 460px;
+   margin: 20px;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+#flav-second-row {
+   display: flex ;
+   justify-content: center;
+   height: 700px;
+   margin-top: 70px;
+   margin-bottom: 110px;
+}
+
+#flav-second-row button {
+   height: 50px;
+   border-radius: 10px;
+   color: rgb(100, 214, 255);
+   font-size: 25px;
+   font-family: 'lilita one';
+   background-color: white;
+ }
+
+#flav-second-row img {
+   max-width: 460px;
+   margin: 20px;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* GET BURPLE GET BURPLE GET BURPLE GET BURPLE GET BURPLE GET BURPLE GET BURPLE GET BURPLE */
+
+.quantity-container {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-family: Arial, sans-serif;
+ }
+ 
+ .arrow {
+   cursor: pointer;
+   font-size: 24px;
+   background: #ddd;
+   padding: 5px 10px;
+   border: none;
+   border-radius: 4px;
+ }
+ 
+ .number {
+   font-size: 20px;
+   width: 40px;
+   text-align: center;
+ }
+ 
+/*LIGHTBOX LIGHTBOX LIGHTBOX LIGHTBOX LIGHTBOX LIGHTBOX LIGHTBOX LIGHTBOX LIGHTBOX LIGHTBOX LIGHTBOX LIGHTBOX fhgkjdfsbgsf*/
+ #lightbox-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1000;
+}
+
+#lightbox-container {
+   background-color: white;
+   padding: 2px;
+   border-radius: 10px;
+   position: relative;
+   max-width: 80%;
+   max-height: 80%;
+   overflow: auto;
+}
+
+#lightbox-close {
+   position: absolute;
+   top: 10px;
+   right: 15px;
+   font-size: 30px;
+   font-family: 'Lilita One';
+   cursor: pointer;
+   color: #00c3ff;
+   background: none;
+   border: none;
+}
+
+#lightbox-content {
+   color: black;
+   text-align: center;
+}
+
+#lightbox-content h3 {
+   font-size: 30px;
+   font-family: 'Lilita One';
+   color: #00c3ff;
+   margin-bottom: 1px;
+}
+
+#lightbox-content p {
+   font-size: 30px;
+   font-family: 'Lilita One';
+   color: #00c3ff;
+   line-height: 1.5;
+}
+
+#thefooter {
+   background-color: #d0f6ff;
+   height: 600px;
+}
+
+#footer {
+   background-color: #ebd5b0;
+   margin-top: 120px;
+   height: 400px;
+}
+
+#footer a {
+   text-decoration: none;
+   font-size: 27px;
+   color: #003703;
+}
+
+#commission  {
+   font-size: 120px;
+   font-family: 'lilita one';
+   color: #00c3ff;
+}
+
+#footer-nav nav ul {
+   display: flex;
+}
+
+#footer-nav nav ul li {
+  margin-right: 40px;
+  font-family: 'Lilita One';
+   color: #00c3ff;
+}
+
+#footer-nav nav ul li a {
+ font-size: 40px;
+    color: #00c3ff;
+ }

@@ -115,30 +115,86 @@
     </section>
 
 
+    <section id="projects" class="projects-section">
+        <h2 class="hidden">The projects</h2>
+        <div class="grid-con">
 
-    <section class="grid-con" id="design-section">
-        <h2 class="hidden">design div</h2>
+            <div class="col-span-full">
 
-        <a href="works.html" class="design-page-link">
-            <h2>CURRENT WORKS</h2>
-
-            <div id="design-divs">
-                <div id="design-work1">
-                    <div>
-                        <img src="images/burple2.png" alt="burple" class="preview-img">
-                    </div>
-                </div>
-
-                <div id="design-work2">
-                    <div>
-                        <img src="images/earbuds2.jpg" alt="audionaut" class="preview-img">
-                    </div>
-                </div>
+                <h2 class="section-title">CURRENT WORKS - 2025</h2>
             </div>
 
-        </a>
+            <div class="col-span-full project-grid">
+
+                <div class="project-item">
+                    <div class="project-box">
+                        <a href="burple.html"><img src="images/burple2.png" alt="burple" class="project-img"></a>
+                    </div>
+                    <p class="project-label">Beverage Campaign and Website</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-box">
+                        <a href="audionaut.html"><img src="images/earbuds2.jpg" alt="audionaut" class="project-img"></a>
+                    </div>
+                    <p class="project-label">Earbuds Campaign and Website</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-box">
+                        <a href="industry.html"><img src="images/industry2.png" alt="industry" class="project-img"></a>
+                    </div>
+                    <p class="project-label">Fanshawe Industry Night Website </p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-box">
+                        <a href="mixer.html"><img src="images/mixer.png" alt="mixer" class="project-img"></a>
+                    </div>
+                    <p class="project-label">Music Mixer Site</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-box">
+                        <a href="mendel.html"><img src="images/mendel2.png" alt="mendel" class="project-img"></a>
+                    </div>
+                    <p class="project-label">Mendelbalm Makeup Campaign</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-box">
+                        <a href="sportsnet.html"><img src="images/sports2.png" alt="sports" class="project-img"></a>
+                    </div>
+                    <p class="project-label">Sportsnet Animation</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <div id="contact-title">
+        <h3>Get in touch</h3>
+    </div>
+
+    <section id="order">
+        <h2 class="hidden">Order</h2>
+
+        <form action="includes/send.php" method="POST">
+            <input type="text" id="name_input" name="name" placeholder="Name" required><br>
+
+            <input type="email" id="email_input" name="email" placeholder="Email" required><br>
+
+            <textarea id="message_input" name="message" placeholder="Message" required></textarea><br>
+
+            <button id="send-btn" type="submit">Send</button>
+        </form>
 
     </section>
+
 
 
     <footer class="grid-con">

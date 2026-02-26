@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AUDIONAUT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <header class="grid-con">
+
+    <h2 class="hidden">header</h2>
+    <div class="col-span-2 m-col-span-2 l-col-span-2">
+      <img src="images/logo.png" alt="Fanshawe's logo" class="logo">
+      <h2 id="brand">AUDIONAUT</h2>
+    </div>
+
+    <nav id="nav" class="col-start-3 m-col-start-3 m-col-span-6 l-col-start-7 l-col-span-5">
+      <!-- Hamburger button -->
+      <button class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav menu -->
+      <ul class="nav-links  nav-menu" id="navMenu">
+        <li><a href="#event">SHOP</a></li>
+        <li><a href="#program-info">ABOUT</a></li>
+        <li><a href="#portfolio-section">CONTACT</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+  <!-- marco had divs inside buttons so i assume it's fine -->
+
+  <model-viewer id="model" src="model/EARBUD1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+    tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+
+    <button class="Hotspot" slot="hotspot-1" data-position="14.391776553090102m 7.9306099802446m 3.952221692282621m"
+      data-normal="-0.026048373780967044m -0.0067021962604819196m 0.9996382159504774m"
+      data-visibility-attribute="visible">
+      <div class="HotspotAnnotation" id="hotspot-1"></div>
+    </button>
+
+    <button class="Hotspot" slot="hotspot-2" data-position="17.68280271477836m 7.063625230482931m 1.927461922219651m"
+      data-normal="0.9414180892844715m -0.16448027956618597m 0.29441164854978896m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation" id="hotspot-2"></div>
+    </button>
+
+    <button class="Hotspot" slot="hotspot-3" data-position="11.305187387922292m 8.885529720464458m 4.100290681622434m"
+      data-normal="0m -0.0005263930338535904m 0.9999998614551775m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation" id="hotspot-3"></div>
+    </button>
+
+    <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+    </div>
+
+    <button slot="ar-button" id="ar-button">
+      View in your space
+    </button>
+    <!-- <div id="ar-prompt">
+      <img src="ar_hand_prompt.png" alt="ar hand">
+    </div> -->
+  </model-viewer>
+  <!-- link to greensock main library -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <!-- Loads <model-viewer> for browsers: -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <!-- Our JS folder last -->
+
+  <section id="desc-section" class="grid-con">
+    <h2 class="hidden">description</h2>
+    <div id="description" class="col-span-full l-col-start-3 l-col-end-11">
+      <p>The Audionaut Lazerpods are for people who put sound quality first. Forget the flat audio you get with cheap
+        buds—these deliver a deep, controlled bass that makes your music feel alive and punchy without becoming muddy.
+
+        Reviewers often describe the sound as crisp and beautifully balanced, noting that vocals and instruments stay
+        clear and detailed. Essentially, they are geared toward the audiophile who wants that rich, superior listening
+        experience, even claiming they outperform some bigger-name brands. If you prioritize stellar sound above all
+        else, these are the ones to check out.</p>
+    </div>
+  </section>
+
+
+
+  <div>
+    <canvas id="explode-view"></canvas>
+  </div>
+
+
+  <section id="xray-section">
+
+    <div class="grid-con">
+      <div class="col-span-full l-col-start-3 l-col-end-11">
+        <h2> Lazerpods by Audionaut </h2>
+        <p>So, the Audionaut Lazerpods are for people who are serious about sound—like, they really care about how their
+          music comes across.
+
+          You know how some earbuds just feel... flat? These aren't like that. People who've tried them usually rave
+          about the bass. It's not just a loud rumble; it's deep and controlled, the kind of bass that actually makes
+          hip-hop or rock music feel punchy and alive, without drowning out everything else. They call it 'best bass
+          hands down.'
+
+          The overall sound is often described as crisp and balanced, which is what you want if you're picky. It means
+          the vocals sound clear, the guitars have sparkle, and everything has its own space—not just a jumbled mess.
+          Some people even say they prefer the sound over some of the super famous brands like Sony or Bose.
+
+          Now, on the less-perfect side (because nothing is perfect): you might notice a slight lag when they first
+          connect, maybe a few seconds, which is a tiny bit annoying if you're in a hurry. And a few people mention they
+          might not be the absolute best if you're sweating a lot during an intense workout, so you might need to adjust
+          them.
+
+          But for a pure listening experience? If you're an audiophile or just someone who truly values the quality of
+          the audio over every other feature, these are definitely worth looking into. They're all about giving you that
+          rich, detailed sound.</p>
+      </div>
+      <div class="col-span-full l-col-start-3 l-col-end-11">
+        <div id="xray">
+          <div id="divisor"></div>
+          <input type="range" min="0" max="100" value="50" id="slider">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <footer class="grid-con">
+    <div id="footer-text" class="col-start-1 col-span-full 
+        m-col-start-0 m-col-end-5 l-col-start-2 l-col-end-5">
+
+      <p>Audionaut <br>
+        © 2025 All Rights Reserved.</p>
+      <p>137 Dundas Street, Downtown <br>
+        London, Ontario Canada N6A 1E9</p>
+      <div id="socials">
+        <img id="x-icon" src="/images/x.svg" alt="x">
+        <img id="insta-icon" src="/images/instagram.svg" alt="ig">
+        <img id="linkedin-icon" src="/images/linkedin-svgrepo-com.svg" alt="linked">
+        <img id="youtube-icon" src="/images/youtube-168-svgrepo-com.svg" alt="tube">
+      </div>
+    </div>
+    <div class="col-start-1 col-span-full m-col-start-6 m-col-span-auto l-col-start-8 l-col-span-auto">
+      <div id="footer-buttons">
+        <h2>AUDIONAUT:</h2>
+        <button>
+          Details
+        </button>
+        <button>
+          Location
+        </button>
+      </div>
+      <div id="footer-contact">
+        <button>
+          Contact
+        </button>
+        <p>+1 519-452-4277</p>
+        <p>audionaut@gmail.com</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

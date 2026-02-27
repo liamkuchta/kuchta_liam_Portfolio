@@ -1,0 +1,218 @@
+.hidden {
+    display: none;
+}
+
+body {
+    background: linear-gradient(to top, #ffc35b, #ff0088) no-repeat;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
+
+header {
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #ff0088;
+    height: 90px;
+    border-bottom: 3px solid rgb(255, 199, 177);
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 153px;
+    margin-top: 16px;
+    margin-right: 190px;
+}
+
+header h3 {
+    margin: 0; 
+    margin-right: 290px;
+    margin-top: 14px;
+    color: rgb(228, 145, 112);
+}
+
+/* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV */
+
+#main-nav a {
+    color:rgb(255, 199, 177);
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 28px;
+    white-space: nowrap;
+    
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#main-nav {
+    display: flex;
+    justify-content: center;
+     
+}
+
+/* RECORD  RECORD  RECORD  RECORD  RECORD  RECORD  RECORD */
+
+#record {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    height: 800px;
+}
+
+/* #record img {
+    width: 680px;
+} */
+
+/* DROP AREA DROP AREA DROP AREA DROP AREA DROP AREA DROP AREA DROP AREA DROP AREA */
+
+.drop-area {
+    width: 180px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, .2);
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    color: #fff;
+}
+
+#drop-section {
+    margin-top: 38px;
+}
+
+#all-drops {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS SOUNDS */
+
+#sounds  { 
+    font-size: 30px;
+    gap: 30px;
+}
+
+color 
+
+#allsounds {
+    display: flex;
+    justify-content: center;
+}
+
+#sounds1 {
+    display: flex;
+}
+
+#sounds2 {
+    display: flex;
+}
+
+#sounds p {
+    border: 20px red;
+    padding: 26px;
+    font-family: helvetica;
+    /*background: linear-gradient(to bottom, #898989, #595959) no-repeat ; */
+    background-color: rgba(255, 255, 255, .2);
+    border-color: black;
+    border-radius: 15px;
+    box-shadow: 6px 4px rgb(204, 38, 101);
+    color: rgb(255, 223, 210);
+    margin-right: 18px;
+    border: 2px solid #000000;
+    text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+/* BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS BUTTONS  */
+
+#pause {
+   width: 63px;
+   height: 63px;
+}
+
+#play {
+    width: 63px;
+    height: 63px;
+    font-size: 42px;
+}
+
+#stop {
+    width: 63px;
+    height: 63px;
+}
+
+#reset {
+    width: 63px;
+    height: 63px;
+}
+
+.playb  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.playb button {
+    height: 67px;
+    font-size: 50px;
+    color:  rgb(255, 255, 255);
+    border-radius: 50px;
+    /*background: linear-gradient(to bottom, #898989, #595959) no-repeat; */
+    background-color: rgba(0, 0, 0, 0.13);
+    border-color: rgb(0, 0, 0);;
+}
+
+/* HOW TO HOW TO HOW TO HOW TO HOW TO HOW TO HOW TO HOW TO HOW TO HOW TO HOW TO HOW TO */
+
+#howto-use {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    text-align: center;      
+    font-size: 30px;
+    font-family: helvetica;
+    margin-top: 30px;
+    padding: 2rem 1rem;     
+}
+
+
+ 
+@keyframes spinDisk {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#record:hover #disk {
+  animation: spinDisk 1s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+
+
+
+

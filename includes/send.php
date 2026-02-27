@@ -64,7 +64,7 @@ try {
         contact_email VARCHAR(100) NOT NULL,
         contact_message TEXT NOT NULL,
         contact_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci");
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci");
     
     // insert the row with named params
     $query = 'INSERT INTO contacts (contact_name, contact_email, contact_message) VALUES (:name, :email, :message)';

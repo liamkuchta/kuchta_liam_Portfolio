@@ -45,7 +45,7 @@ CREATE TABLE `tbl_linking_table` (
   `software_id` int NOT NULL,
   `projects_id` int NOT NULL,
   `user_id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -62,7 +62,7 @@ CREATE TABLE `tbl_projects` (
   `description` varchar(200) NOT NULL,
   `creators` varchar(200) NOT NULL,
   `date` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tbl_projects`
@@ -83,7 +83,7 @@ CREATE TABLE `tbl_software` (
   `cinema4d` int NOT NULL,
   `adobe` int NOT NULL,
   `html_css_js` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,7 @@ CREATE TABLE `tbl_users` (
   `name` varchar(200) NOT NULL,
   `avatar` int NOT NULL,
   `specialization` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tbl_users`
@@ -159,7 +159,7 @@ CREATE TABLE `admins` (
   `admin_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `admin_username` varchar(100) UNIQUE NOT NULL,
   `admin_password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `admins`
@@ -183,7 +183,7 @@ CREATE TABLE `projects` (
   `project_url` varchar(255),
   `created_at` timestamp DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `projects`
@@ -209,7 +209,7 @@ CREATE TABLE `contacts` (
   `contact_email` varchar(100) NOT NULL,
   `contact_message` text NOT NULL,
   `contact_date` timestamp DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 COMMIT;
 

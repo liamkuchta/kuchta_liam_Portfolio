@@ -114,15 +114,38 @@ class Database
      */
     public function getConfig(): array
     {
-        // grab env vars (dotenv fills these if installed)
-        $env = getenv();
+        $host = getenv('DB_HOST');
+        $port = getenv('DB_PORT');
+        $database = getenv('DB_NAME');
+        $user = getenv('DB_USER');
+        $pass = getenv('DB_PASS');
+
+        if ($host === false || $host === '') {
+            $host = $_ENV['DB_HOST'] ?? ($_SERVER['DB_HOST'] ?? 'localhost');
+        }
+
+        if ($port === false || $port === '') {
+            $port = $_ENV['DB_PORT'] ?? ($_SERVER['DB_PORT'] ?? '3306');
+        }
+
+        if ($database === false || $database === '') {
+            $database = $_ENV['DB_NAME'] ?? ($_SERVER['DB_NAME'] ?? 'db_portfolio');
+        }
+
+        if ($user === false || $user === '') {
+            $user = $_ENV['DB_USER'] ?? ($_SERVER['DB_USER'] ?? 'root');
+        }
+
+        if ($pass === false || $pass === '') {
+            $pass = $_ENV['DB_PASS'] ?? ($_SERVER['DB_PASS'] ?? 'root');
+        }
         
         return [
-            'host' => $env['DB_HOST'] ?? 'localhost',
-            'port' => $env['DB_PORT'] ?? '3306',
-            'database' => $env['DB_NAME'] ?? 'db_portfolio',
-            'user' => $env['DB_USER'] ?? 'root',
-            'pass' => $env['DB_PASS'] ?? 'root',
+            'host' => $host,
+            'port' => $port,
+            'database' => $database,
+            'user' => $user,
+            'pass' => $pass,
         ];
     }
 

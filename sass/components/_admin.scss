@@ -1,0 +1,171 @@
+// Admin panel styles (moved from inline <style> tags)
+// This partial covers project list, add/edit forms, and general admin layout.
+
+body.admin {
+  background: #ffffff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 8px;
+  
+}
+
+.admin-titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+//   border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+}
+
+.logout-btn {
+  padding: 8px 15px;
+  background: #edebeb;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.logout-btn:hover {
+  background: #b71c1c;
+}
+
+.add-project-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.add-project-btn:hover {
+  background: #45a049;
+}
+
+.project-item {
+  background: #efeeed;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #efeeed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+.project-info h3 {
+  margin: 0 0 5px 0;
+}
+.project-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+.project-actions {
+  display: flex;
+  gap: 10px;
+}
+.edit-btn,
+.delete-btn {
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.edit-btn {
+  background: #000000;
+  color: white;
+}
+.edit-btn:hover {
+  background: #0b7dda;
+}
+.delete-btn {
+  background: #efeeed;
+  color: rgb(0, 0, 0);
+}
+.delete-btn:hover {
+  background: #ebebeb;
+}
+
+.no-projects {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+}
+
+/* form pages */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.admin form {
+  display: flex;
+  flex-direction: column;
+}
+
+body.admin label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+body.admin input[type="text"],
+body.admin input[type="url"],
+body.admin textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+body.admin textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+body.admin button {
+  margin-top: 20px;
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+body.admin button:hover {
+  background: #45a049;
+}
+
+body.admin a {
+  margin-top: 15px;
+  color: #2196f3;
+  text-decoration: none;
+}
+body.admin a:hover {
+  text-decoration: underline;
+}
+
+/* edit form overrides */
+body.admin-edit button {
+  background: #2196f3;
+}
+body.admin-edit button:hover {
+  background: #0b7dda;
+}
+body.admin-edit a {
+  color: #666;
+}

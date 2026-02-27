@@ -1,3 +1,17 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        "**/Caspe_Kirk_Portfolio-main/**",
+        "**/projects/**",
+        "**/class_portfolio/**"
+    ],
+    "liveSassCompile.settings.generateMap": false
 }

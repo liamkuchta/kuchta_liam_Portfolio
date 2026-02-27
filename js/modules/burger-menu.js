@@ -22,9 +22,11 @@ export function burgerMenu() {
       navToggle.addEventListener('click', toggleNavMenu);
 
       const navLinks = navMenu.querySelectorAll('a');
-      navLinks.forEach(link => {
+      function attachCloseNavMenu(link) {
           link.addEventListener('click', closeNavMenu);
-      });
+      }
+
+      navLinks.forEach(attachCloseNavMenu);
 
       document.addEventListener('click', closeNavMenuOnClickOutside);
   }

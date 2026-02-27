@@ -17,8 +17,18 @@
 
   function startMarquee(element, duration, direction) {
     const width = element.scrollWidth;
-    const startX = direction === "left" ? 0 : -width;
-    const endX = direction === "left" ? -width : 0;
+    let startX = 0;
+    let endX = -width;
+
+    if (direction !== "left") {
+      startX = -width;
+      endX = 0;
+    }
+
+    function modifyX(nextX) {
+      return updatePosition(nextX, width);
+    }
+
     gsap.set(element, { x: startX });
     gsap.to(element, {
       x: endX,
@@ -26,7 +36,7 @@
       ease: "none",
       repeat: -1,
       modifiers: {
-        x: function(nextX) { return updatePosition(nextX, width); }
+        x: modifyX
       }
     });
   }

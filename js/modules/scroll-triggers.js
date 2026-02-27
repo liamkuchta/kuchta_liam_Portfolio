@@ -12,7 +12,8 @@ export function scrollTriggers () {
   //individual project section
   function animateSections() {
     const sections = document.querySelectorAll(".single-project-section .col-span-full");
-    sections.forEach(function(section) {
+
+    function animateSingleSection(section) {
       gsap.from(section, {
         scrollTrigger: {
           trigger: section,
@@ -24,7 +25,9 @@ export function scrollTriggers () {
         duration: 1,
         ease: "power2.out"
       });
-    });
+    }
+
+    sections.forEach(animateSingleSection);
   }
 
 

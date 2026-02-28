@@ -164,6 +164,35 @@ try {
         </div>
     </section>
 
+     <section class="strip-section2">
+        <h2 class="hidden">strip</h2>
+        <div id="top-stripe2" class="scrolling-strip2">
+            <div class="scrolling-text2">
+                <span>KUCHTA WEB DESIGN</span> •
+                <span>KUCHTA WEB DESIGN</span> •
+                <span>KUCHTA WEB DESIGN</span> •
+                <span>KUCHTA WEB DESIGN</span> •
+                <span>KUCHTA WEB DESIGN</span> •
+                <span>KUCHTA WEB DESIGN</span> •
+            </div>
+        </div>
+
+        <div id="bottom-stripe2" class="scrolling-strip2">
+            <div class="scrolling-text2">
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+               
+
+            </div>
+        </div>
+    </section>
+
 
     <div id="contact-title">
         <h3>Get in touch</h3>

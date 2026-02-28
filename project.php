@@ -37,21 +37,46 @@ if (!$project) {
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
     <script type="module" src="js/main.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <a href="index.php"><img src="images/logo.png" alt="logo" class="logo"></a>
+<body class="project-body">
+    <header class="grid-con">
+        <h1 class="hidden">Header</h1>
+        <h2 class="hidden">logo</h2>
+        <div class="col-span-2 m-col-span-2 l-col-span-2">
+
+            <a href="index.php"><img src="images/logo.png" alt="liam logo" class="logo"></a>
+        </div>
+
+        <nav id="nav" class="col-start-3 m-col-start-3 m-col-span-6 l-col-start-7 l-col-span-5">
+            <!-- bamburger button -->
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- nav menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#works-link">WORKS</a></li>
+              
+                <li><a href="#contact-title">CONTACT</a></li>
+
+            </ul>
+        </nav>
     </header>
 
-    <main class="grid-con">
-        <section class="col-span-full">
-            <h1><?php echo htmlspecialchars($project['project_title']); ?></h1>
-            <p><?php echo nl2br(htmlspecialchars($project['project_description'])); ?></p>
+    <main >
+        <section class=" project-all-items">
+           
             <?php if (!empty($project['project_image_url'])): ?>
-                <img src="<?php echo htmlspecialchars($project['project_image_url']); ?>" alt="<?php echo htmlspecialchars($project['project_title']); ?>" style="max-width:100%;height:auto;">
+                <img class="project-pic" src="<?php echo htmlspecialchars($project['project_image_url']); ?>" alt="<?php 
+                    echo htmlspecialchars($project['project_title']); ?>" style="max-width:40%;">
             <?php endif; ?>
+             <h1><?php echo htmlspecialchars($project['project_title']); ?></h1>
+            <p><?php echo nl2br(htmlspecialchars($project['project_description'])); ?></p>
             <?php if (!empty($project['project_url'])): ?>
-                <p><a href="<?php echo htmlspecialchars($project['project_url']); ?>">View project</a></p>
+                <p><a class="view-project"  href="<?php echo htmlspecialchars($project['project_url']); ?>">View project</a></p>
             <?php endif; ?>
         </section>
     </main>

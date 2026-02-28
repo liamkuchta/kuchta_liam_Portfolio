@@ -77,7 +77,7 @@ try {
         <h2 class="hidden"> bio section</h2>
         <div id="bio-text">
            <img id="headshot" src="images/headshot_1.png" alt="headshot">
-            <p>I’m a motion and graphic designer with a passion for making
+            <p>Hey! I'm Liam and I’m a motion and graphic designer. I have a passion for making
                 clean and on-theme designs for brands and websites. I'm skilled in
                 Cinema4d,
                 Adobe Suite, and also traditional drawing. I enjoy
@@ -147,7 +147,8 @@ try {
                         <div class="project-item">
                             <div class="project-box">
                                 <a href="project.php?id=<?php echo $project['project_id']; ?>">
-                                    <img src="<?php echo htmlspecialchars($project['project_image_url']); ?>" alt="<?php echo htmlspecialchars($project['project_title']); ?>" class="project-img">
+                                    <img src="<?php echo htmlspecialchars($project['project_image_url']); ?>" alt="<?php 
+                                    echo htmlspecialchars($project['project_title']); ?>" class="project-img">
                                 </a>
                             </div>
                             <p class="project-label"><?php echo htmlspecialchars($project['project_title']); ?></p>

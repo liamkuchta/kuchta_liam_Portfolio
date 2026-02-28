@@ -50,9 +50,7 @@ body {
   max-width: 200px;
 height:200px ;
 margin-right: 15px;
-  
-  // /* Keeps the image from stretching beyond its actual original size */
-  // display: block;
+  border-radius: 70px;
 }
 
 #bio-text {
@@ -103,7 +101,8 @@ margin-right: 15px;
 /* SCROLLING BANDS SCROLLING BANDS SCROLLING BANDS SCROLLING BANDS SCROLLING BANDS */
 
 .strip-section {
-  margin-bottom: 60px
+  margin-bottom: 60px;
+  margin-top: 120px;
 }
 
 .scrolling-strip {
@@ -146,15 +145,18 @@ background-color: rgba(255, 255, 255, 0);
 /* PROJECTS PAGE    PROJECTS PAGE   PROJECTS PAGE   PROJECTS PAGE   PROJECTS PAGE   PROJECTS PAGE   PROJECTS PAGE    */
 
 .section-title {
-  text-align: center;
+  text-align: left;
   font-family: "league spartan";
-  font-size: 40px;
-  color: rgb(133, 102, 101);
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(122, 122, 122);
 }
 
 
 .projects-section {
-  padding: 40px 0;
+  // padding: 40px 0;
+  margin-top: 200px;
+  margin-bottom: 400px;
 }
 
 .project-grid {
@@ -219,6 +221,10 @@ background-color: rgba(255, 255, 255, 0);
 
 
 /* CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
+
+#order {
+  margin-bottom: 400px;
+}
 
 .contact-main {
   background: url(../images/ice1920.png) no-repeat;

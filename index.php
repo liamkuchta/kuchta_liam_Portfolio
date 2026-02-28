@@ -56,9 +56,9 @@ try {
 
             <!-- nav menu -->
             <ul class="nav-menu" id="navMenu">
-                <li><a href="works.html">WORKS</a></li>
-                <li><a href="#program-info">REFERENCES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#works-link">WORKS</a></li>
+              
+                <li><a href="#contact-title">CONTACT</a></li>
 
             </ul>
         </nav>
@@ -76,15 +76,19 @@ try {
     <section id="bio">
         <h2 class="hidden"> bio section</h2>
         <div id="bio-text">
-            <p>I’m a web developer with a passion for creating clean, user-friendly, and responsive websites. Skilled in
-                HTML,
-                CSS, and JavaScript, I enjoy turning ideas into interactive experiences. I also work with modern
-                frameworks
-                and
-                tools to build efficient, scalable applications. With a strong eye for design and attention to detail,
-                my
+           <img id="headshot" src="images/headshot_1.png" alt="headshot">
+            <p>I’m a motion and graphic designer with a passion for making
+                clean and on-theme designs for brands and websites. I'm skilled in
+                Cinema4d,
+                Adobe Suite, and also traditional drawing. I enjoy
+                turning ideas into interactive experiences. I'm always
+                adding to my toolbox to
+
+                make beautiful, easily usable designs.
+                My
                 goal
-                is to deliver seamless digital solutions that balance both functionality and aesthetics.</p>
+                is to deliver flawless digital designs that balance both
+                functionality and aesthetics.</p>
         </div>
     </section>
 
@@ -125,7 +129,7 @@ try {
             </div>
         </div>
     </section>
-
+<!-- PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS -->
 
     <section id="projects" class="projects-section">
         <h2 class="hidden">The projects</h2>
@@ -133,7 +137,7 @@ try {
 
             <div class="col-span-full">
 
-                <h2 class="section-title">CURRENT WORKS - 2025</h2>
+                <h2 id="works-link" class="section-title">CURRENT WORKS - 2025</h2>
             </div>
 
             <div class="col-span-full project-grid">

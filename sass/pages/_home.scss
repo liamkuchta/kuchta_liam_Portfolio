@@ -50,7 +50,7 @@ body {
   max-width: 200px;
 height:200px ;
 margin-right: 15px;
-  border-radius: 70px;
+  border-radius: 90px;
 }
 
 #bio-text {
@@ -101,7 +101,7 @@ margin-right: 15px;
 /* SCROLLING BANDS SCROLLING BANDS SCROLLING BANDS SCROLLING BANDS SCROLLING BANDS */
 
 .strip-section {
-  margin-bottom: 60px;
+  
   margin-top: 120px;
 }
 
@@ -129,17 +129,20 @@ margin-right: 15px;
 
 #top-stripe {
 border-top: 1px solid #00ffc300;
-  border-bottom: 3px solid #313131;
-  background-color: rgba(255, 255, 255, 0);
-  color: rgb(123, 123, 123);
+  border-bottom: 3px solid rgb(116, 116, 116);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(79, 79, 79);
+  padding-top: 90px;
 }
 
 
 #bottom-stripe   {
   
-background-color: rgba(255, 255, 255, 0);
-    color: #626262;
+background-color: rgb(0, 0, 0);
+    color: rgb(133, 133, 133);
      border-bottom: 1px solid #afafaf00;
+     font-weight: 10;
+     padding-top: 26px;
 }
 
 /* PROJECTS PAGE    PROJECTS PAGE   PROJECTS PAGE   PROJECTS PAGE   PROJECTS PAGE   PROJECTS PAGE   PROJECTS PAGE    */
@@ -147,37 +150,51 @@ background-color: rgba(255, 255, 255, 0);
 .section-title {
   text-align: left;
   font-family: "league spartan";
-  font-size: 60px;
-  font-weight: 600;
-  color: rgb(122, 122, 122);
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(104, 104, 104);
+  margin-top: 40px;
 }
 
 
 .projects-section {
   // padding: 40px 0;
-  margin-top: 200px;
-  margin-bottom: 400px;
+  // margin-top: 200px;
+  margin-bottom: 300px;
+  background-color: rgb(0, 0, 0);
+  border-top: 6px black;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  
   gap: 50px;
   justify-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  
 }
 
 .project-item {
   text-align: center;
+ background: linear-gradient(to right, #161616, #1b1b1b);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 2px solid #4842429b;
+  // border: none;
+  min-width: 524px;
 }
 
 .project-box {
-  width: 300px;
-  height: 400px;
+  width: 500px;
+  height: 250px;
   background-color: #00000027;
   background-color: #00000000;
   border-radius: 35px;
-  display: flex;
+  // display: flex;
+  
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease;
@@ -196,9 +213,11 @@ background-color: rgba(255, 255, 255, 0);
 
 .project-label {
   margin-top: 10px;
-  font-size: 23px;
+  font-size: 20px;
   font-family: "league spartan";
-  color: rgb(133, 102, 101);
+  color: rgb(203, 203, 203);
+  max-width: 500px;
+  font-weight: 500;
 }
 
 @media (max-width: 767px) {
@@ -305,21 +324,23 @@ input::placeholder {
 #contact-title h3 {
   display: flex;
   justify-content: center;
-  font-size: 60PX;
-  color: #ffffff;
+  font-size: 35PX;
+  color: rgb(116, 116, 116);
   -webkit-text-stroke: .1px #000000;
   font-family: "League Spartan";
+  font-weight: 400;
 }
 
 #send-btn {
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  color: #000000;
+  color: rgb(116, 116, 116);
   font-family: "League Spartan";
   font-size: 27px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgb(116, 116, 116);
 }
 
 #message_input {

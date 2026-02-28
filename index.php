@@ -73,26 +73,7 @@ try {
         <h3>MOTION & <br> GRAPHIC DESIGNER </h3>
     </section>
 
-    <section id="bio">
-        <h2 class="hidden"> bio section</h2>
-        <div id="bio-text">
-           <img id="headshot" src="images/headshot_1.png" alt="headshot">
-            <p>Hey! I'm Liam and I’m a motion and graphic designer. I have a passion for making
-                clean and on-theme designs for brands and websites. I'm skilled in
-                Cinema4d,
-                Adobe Suite, and also traditional drawing. I enjoy
-                turning ideas into interactive experiences. I'm always
-                adding to my toolbox to
-
-                make beautiful, easily usable designs.
-                My
-                goal
-                is to deliver flawless digital designs that balance both
-                functionality and aesthetics.</p>
-        </div>
-    </section>
-
-    <section id="videosection">
+      <section id="videosection">
         <h2 class="hidden">video</h2>
         <div class="video-container ">
             <video controls muted autoplay loop class="hero-video">
@@ -101,6 +82,23 @@ try {
             </video>
         </div>
     </section>
+
+    <section id="bio">
+        <h2 class="hidden"> bio section</h2>
+        <div id="bio-text">
+           <img id="headshot" src="images/headshot_1.png" alt="headshot">
+            <p>Hey! I'm Liam and I’m a motion and graphic designer. I make
+                clean and on-theme designs for brands and websites. I spend most of my time in
+                Cinema4d and Adobe Suite, as well as doing traditional drawing (if you ever need a portrait). I live for
+                turning ideas into beautiful interactive experiences. 
+                My
+                goal
+                is to deliver flawless digital designs that balance both
+                functionality and aesthetics.</p>
+        </div>
+    </section>
+
+  
 
 
 
@@ -119,26 +117,29 @@ try {
 
         <div id="bottom-stripe" class="scrolling-strip">
             <div class="scrolling-text">
-                <span>BRING YOUR VISION TO LIFE</span> •
-                <span>BRING YOUR VISION TO LIFE</span> •
-                <span>BRING YOUR VISION TO LIFE</span> •
-                <span>BRING YOUR VISION TO LIFE</span> •
-                <span>BRING YOUR VISION TO LIFE</span> •
-                <span>BRING YOUR VISION TO LIFE</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+                <span>RECENT WORKS</span> •
+               
 
             </div>
         </div>
     </section>
 <!-- PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS -->
 
-    <section id="projects" class="projects-section">
+    <section  id="projects " class="projects-section">
         <h2 class="hidden">The projects</h2>
-        <div class="grid-con">
+        <div id="works-link"  class="grid-con">
+ 
+            <!-- <div class="col-span-full">
 
-            <div class="col-span-full">
-
-                <h2 id="works-link" class="section-title">CURRENT WORKS - 2025</h2>
-            </div>
+                <h2 id="works-link" class="section-title">RECENT WORKS </h2>
+            </div> -->
 
             <div class="col-span-full project-grid">
 

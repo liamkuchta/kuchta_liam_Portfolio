@@ -52,7 +52,7 @@ try {
                         </div>
                         <div class="project-actions">
                             <a href="edit_project_form.php?id=<?php echo $project['project_id']; ?>" class="edit-btn">Edit</a>
-                            <a href="delete_project.php?id=<?php echo $project['project_id']; ?>" class="delete-btn" onclick="return confirm('Are you sure?')">Delete</a>
+                            <a href="delete_project.php?id=<?php echo $project['project_id']; ?>" class="delete-btn">Delete</a>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -63,5 +63,6 @@ try {
             </div>
         <?php endif; ?>
     </div>
+    <script src="../js/admin-delete-confirm.js" defer></script>
 </body>
 </html>

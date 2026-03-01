@@ -152,6 +152,19 @@ margin-right: 15px;
 
 }
 
+@media (max-width: 767px) {
+  .hero-video {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+  }
+
+  .video-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 
 /* SCROLLING BANDS SCROLLING BANDS SCROLLING BANDS SCROLLING BANDS SCROLLING BANDS */
 
@@ -277,7 +290,7 @@ background-color: rgb(0, 0, 0);
   font-weight: 500;
 }
 
-@media (max-width: 1167px) {
+@media (max-width: 767px) {
   .project-grid {
       grid-template-columns: 1fr;
       gap: 35px;
@@ -296,6 +309,7 @@ background-color: rgb(0, 0, 0);
 
   
 }
+
 
 
 @media (min-width: 768px) and (max-width: 1607px) {

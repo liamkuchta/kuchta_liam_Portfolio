@@ -48,22 +48,7 @@ if (!$project) {
             <a href="index.php"><img src="images/logo.png" alt="liam logo" class="logo"></a>
         </div>
 
-        <nav id="nav" class="col-start-3 m-col-start-3 m-col-span-6 l-col-start-7 l-col-span-5">
-            <!-- bamburger button -->
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <!-- nav menu -->
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#works-link">WORKS</a></li>
-              
-                <li><a href="#contact-title">CONTACT</a></li>
-
-            </ul>
-        </nav>
+       
     </header>
 
     <main >

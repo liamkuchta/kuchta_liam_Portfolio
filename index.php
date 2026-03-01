@@ -56,9 +56,9 @@ try {
 
             <!-- nav menu -->
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#works-link">WORKS</a></li>
+                <li><a href="#slide">WORKS</a></li>
               
-                <li><a href="#contact-title">CONTACT</a></li>
+                <li><a href="#nav-target">CONTACT</a></li>
 
             </ul>
         </nav>
@@ -83,6 +83,10 @@ try {
         </div>
     </section>
 
+    <section class="letswork">
+     <li><a class="letswork-btn" href="#contact-title">Let's work!</a></li>
+    </section>
+
     <section id="bio">
         <h2 class="hidden"> bio section</h2>
         <div id="bio-text">
@@ -93,7 +97,7 @@ try {
                 turning ideas into beautiful interactive experiences. 
                 My
                 goal
-                is to deliver flawless digital designs that balance both
+                is to deliver flawless designs that balance both
                 functionality and aesthetics.</p>
         </div>
     </section>
@@ -102,7 +106,7 @@ try {
 
 
 
-    <section class="strip-section">
+    <section id="slide" class="strip-section">
         <h2 class="hidden">strip</h2>
         <div id="top-stripe" class="scrolling-strip">
             <div class="scrolling-text">
@@ -132,7 +136,7 @@ try {
     </section>
 <!-- PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS -->
 
-    <section  id="projects " class="projects-section">
+    <section  id="projects" class="projects-section">
         <h2 class="hidden">The projects</h2>
         <div id="works-link"  class="grid-con">
  
@@ -164,35 +168,10 @@ try {
         </div>
     </section>
 
-     <section class="strip-section2">
-        <h2 class="hidden">strip</h2>
-        <div id="top-stripe2" class="scrolling-strip2">
-            <div class="scrolling-text2">
-                <span>KUCHTA WEB DESIGN</span> •
-                <span>KUCHTA WEB DESIGN</span> •
-                <span>KUCHTA WEB DESIGN</span> •
-                <span>KUCHTA WEB DESIGN</span> •
-                <span>KUCHTA WEB DESIGN</span> •
-                <span>KUCHTA WEB DESIGN</span> •
-            </div>
-        </div>
 
-        <div id="bottom-stripe2" class="scrolling-strip2">
-            <div class="scrolling-text2">
-                <span>RECENT WORKS</span> •
-                <span>RECENT WORKS</span> •
-                <span>RECENT WORKS</span> •
-                <span>RECENT WORKS</span> •
-                <span>RECENT WORKS</span> •
-                <span>RECENT WORKS</span> •
-                <span>RECENT WORKS</span> •
-                <span>RECENT WORKS</span> •
-               
-
-            </div>
-        </div>
-    </section>
-
+<section id="nav-target">
+    <h2 class="hidden">nav target</h2>
+</section>
 
     <div id="contact-title">
         <h3>Get in touch</h3>

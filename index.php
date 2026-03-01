@@ -140,10 +140,7 @@ try {
         <h2 class="hidden">The projects</h2>
         <div id="works-link"  class="grid-con">
  
-            <!-- <div class="col-span-full">
-
-                <h2 id="works-link" class="section-title">RECENT WORKS </h2>
-            </div> -->
+          
 
             <div class="col-span-full project-grid">
 
@@ -203,10 +200,17 @@ try {
             <p>
                 London, Ontario Canada </p>
             <div id="socials">
-                <img id="x-icon" src="images/x.svg" alt="x">
-                <img id="insta-icon" src="images/instagram.svg" alt="ig">
-                <img id="linkedin-icon" src="images/linkedin-svgrepo-com.svg" alt="linked">
-                <img id="youtube-icon" src="images/youtube-168-svgrepo-com.svg" alt="tube">
+                
+               
+
+                <a href="https://instagram.com/kuchta.art" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                     <img id="insta-icon" src="images/instagram.svg" alt="Instagram">
+                        </a>
+
+               <a href="https://ca.linkedin.com/in/liamkuchta" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img id="linkedin-icon" src="images/linkedin-svgrepo-com.svg" alt="LinkedIn">
+                </a>
+              
             </div>
         </div>
         <div class="col-start-1 col-span-full m-col-start-6 m-col-span-auto l-col-start-8 l-col-span-auto">
@@ -225,7 +229,7 @@ try {
 
     </footer>
 
-    <!-- <script src="/js/main.js"></script> -->
+   
 </body>
 
 </html>

@@ -72,9 +72,9 @@ footer {
   font-family: "League Spartan";
 }
 
-#footer-contact button {
-  background-color: #00000000;
-  color: rgb(129, 129, 129);
+#footer-contact-button {
+  
+  
   font-family: "League Spartan";
   margin-right: 40px;
   max-width: 450px;
@@ -82,6 +82,18 @@ footer {
   border-radius: 70px;
   font-size: 30px;
   cursor: pointer;
-  border: 2px solid rgb(129, 129, 129);
+  
   margin-top: 50px;
+  list-style: none;
+  margin-top: 30px;
+
+
+   box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.121);
+    border: none;
+}
+
+#footer-contact a {
+  text-decoration: none;
+ color: rgb(129, 129, 129);
 }

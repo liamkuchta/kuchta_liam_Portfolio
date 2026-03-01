@@ -212,17 +212,11 @@ try {
         <div class="col-start-1 col-span-full m-col-start-6 m-col-span-auto l-col-start-8 l-col-span-auto">
             <div id="footer-buttons">
                 <h2> LK Motion and Graphics</h2>
-                <button>
-                    Details
-                </button>
-                <button>
-                    Location
-                </button>
+             
             </div>
             <div id="footer-contact">
-                <button>
-                    Contact
-                </button>
+               
+                 <li id="footer-contact-button" ><a href="#nav-target">Contact</a></li>
                 <p>+1 226-377-9308</p>
                 <p>liamkuchta@gmail.com</p>
             </div>
